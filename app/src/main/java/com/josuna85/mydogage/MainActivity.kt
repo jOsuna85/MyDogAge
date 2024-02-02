@@ -21,9 +21,10 @@ class MainActivity : AppCompatActivity() {
             if(ageString.isNotEmpty()) {
                 val ageInt = ageString.toInt()
                 val result = ageInt * 7
-                resultText.text = "Tu edad canina es de $result años"
+                resultText.text = getString(R.string.result_text, result)
+                //como buena practica se puede agregar en el archivo string
             }else{
-                Toast.makeText(this,"Agrega tu edad para continuar",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,R.string.must_input_your_age,Toast.LENGTH_LONG).show()
             }
         }
     }

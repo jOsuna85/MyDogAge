@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cuantos años tienes?"
+        android:text="@string/How_old_are_you"
         android:gravity="center"
         android:padding="8dp"
         android:textSize="24sp"
@@ -31,7 +31,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:inputType="number"
-        android:hint="Tu edad"/>
+        android:hint="@string/Your_age"/>
 
     <TextView
         android:id="@+id/txt_result"
@@ -48,6 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Calcular"/>
+        android:text="@string/calculate"/>
 
 </LinearLayout>
