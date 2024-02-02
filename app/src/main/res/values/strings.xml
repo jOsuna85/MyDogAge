@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">MyDogAge</string>
-    <string name="How_old_are_you">Cuantos años tienes?</string>
-    <string name="Your_age">Tu edad</string>
-    <string name="calculate">Calcular</string>
-    <string name="must_input_your_age">Agrega tu edad para continuar</string>
-    <string name="result_text">Tu edad canina es de %d años</string>
+    <string name="app_name" translatable="false">MyDogAge</string>
+    <string name="How_old_are_you">How old are you?</string>
+    <string name="Your_age">Your age</string>
+    <string name="calculate">Calculate</string>
+    <string name="must_input_your_age">Input your name to continue</string>
+    <string name="result_text">Your dog age is %d years old</string>
 </resources>
 <!--%d se utiliza para reemplazar una variable de tipo Int-->
