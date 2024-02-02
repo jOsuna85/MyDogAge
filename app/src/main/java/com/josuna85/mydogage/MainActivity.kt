@@ -6,15 +6,23 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.josuna85.mydogage.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val agedEdit = findViewById<EditText>(R.id.edtxt_age_input)
-        val resultText = findViewById<TextView>(R.id.txt_result)
-        val buttonCal = findViewById<Button>(R.id.btn_calculate)
+    // se agrega viewBinding al archivo gradle y posteriormente se tiene que generar la siguiente linea codigo
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        //findViewById en una app grande se vuelve pesada ya que busca el ID
+        //en todas las vistas o layouts
+        //val agedEdit = findViewById<EditText>(R.id.edtxt_age_input)
+        val agedEdit = binding.edtxtAgeInput
+        //val resultText = findViewById<TextView>(R.id.txt_result)
+        val resultText = binding.txtResult
+        //val buttonCal = findViewById<Button>(R.id.btn_calculate)
+        val buttonCal = binding.btnCalculate
 
         buttonCal.setOnClickListener {
             val ageString = agedEdit.text.toString()
