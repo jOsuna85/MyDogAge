@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:src="@mipmap/luffy"/>
+        android:src="@drawable/imagenprincipal"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -37,10 +37,10 @@
         android:id="@+id/txt_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="Cuantos años tienes?"
+        tools:text="Tu edad canina es de !!"
         android:gravity="center"
         android:padding="8dp"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:textColor="@android:color/black"/>
     
     <Button
